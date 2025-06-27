@@ -11,8 +11,8 @@ The model predicts multiple water quality parameters such as:
 * CL
 
 # Internship Details
-Internship Type: AICTE Virtual Internship - Edunet Foundation
-Sponsor: Shell
-Duration: June 2025 (4 weeks)
-Focus Area: Artificial Intelligence & Machine Learning in Green Technology
+* Internship Type: AICTE Virtual Internship - Edunet Foundation
+* Sponsor: Shell
+* Duration: June 2025 (4 weeks)
+* Focus Area: Artificial Intelligence & Machine Learning in Green Technology
 
