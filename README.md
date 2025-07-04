@@ -7,6 +7,7 @@ The Project aims to Predict Quality of Water based on few metrics using machine 
 * Oxygen Metrics: O₂, BOD5
 * Toxins: NH₄
 * Physical Content: Colloids
+
 Multi-target regression allows simultaneous prediction of these pollutants from a single input instance.
 
 # Technoogy Used
@@ -28,6 +29,8 @@ The model predicts multiple water quality parameters such as:
 The model was evaluated using:
 * R² Score
 * Mean Squared Error (MSE)
+
+
 Performance was acceptable across all parameters
 
 
