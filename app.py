@@ -1,18 +1,15 @@
-# Import all the necessary libraries
 import pandas as pd
 import numpy as np
 import joblib
 import pickle
 import streamlit as st
 
-# Load the model and structure
+# Loading the model
 model = joblib.load("ness_model.pkl")
 model_cols = joblib.load("model_columns.pkl")
 
-# Page configuration
 st.set_page_config(page_title="Water Pollutants Predictor", page_icon="💧", layout="centered")
 
-# Header Section
 st.markdown("<h1 style='color:#6A5ACD; text-align:center;'>💧 Water Quality Predictor</h1>", unsafe_allow_html=True)
 st.markdown("### 🧪 Predict key water pollutant levels based on Year and Station ID")
 
@@ -31,11 +28,9 @@ if st.button('🔍 Predict'):
         st.warning('⚠️ Please enter the Station ID.')
     else:
         with st.spinner('Predicting pollutant levels...'):
-            # Prepare the input
             input_df = pd.DataFrame({'year': [year_input], 'id': [station_id]})
             input_encoded = pd.get_dummies(input_df, columns=['id'])
 
-            # Align with model columns
             for col in model_cols:
                 if col not in input_encoded.columns:
                     input_encoded[col] = 0
@@ -46,7 +41,7 @@ if st.button('🔍 Predict'):
             pollutants = ['O2', 'NO3', 'NO2', 'SO4', 'PO4', 'CL']
             results = []
 
-            # Define caution status function
+            # caution status function
             def pollutant_status(pollutant, value):
                 thresholds = {
                     'O2': (5.0, 2.0),
