@@ -2,7 +2,7 @@
 The Project aims to Predict Quality of Water based on few metrics using machine learning techniques specifically MultiOutputRegressor wrapped around a RandomForestRegressor.Then classify the water into categories by quality level.
 
 # Overview Of Predicted Parameters
-* Model predicts concentration (mg/L) of pollutants:
+ Model predicts concentration (mg/L) of pollutants:
 * Nutrients & Salts: NO₃, NO₂, SO₄, PO₄, CL
 * Oxygen Metrics: O₂, BOD5
 * Toxins: NH₄
@@ -26,7 +26,6 @@ The model predicts multiple water quality parameters such as:
 
 # Model Performance
 The model was evaluated using:
-
 * R² Score
 * Mean Squared Error (MSE)
 Performance was acceptable across all parameters
