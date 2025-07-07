@@ -5,7 +5,7 @@ import pickle
 import streamlit as st
 
 # Loading the model
-model = joblib.load("ness_model.pkl")
+model = joblib.load("pollution_model.pkl")
 model_cols = joblib.load("model_columns.pkl")
 
 st.set_page_config(page_title="Water Pollutants Predictor", page_icon="💧", layout="centered")
